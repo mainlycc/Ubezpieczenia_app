@@ -44,7 +44,7 @@ export default function Home() {
     };
     
     try {
-      const response = await fetch('http://localhost:5000/api/calculate-rate', {
+      const response = await fetch('https://ubezpieczenia-app.onrender.com/api/calculate-rate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

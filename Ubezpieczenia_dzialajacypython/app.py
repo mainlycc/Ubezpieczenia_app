@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["*"],
+        "origins": ["https://ubezpieczenia-app.vercel.app"],
         "methods": ["POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
