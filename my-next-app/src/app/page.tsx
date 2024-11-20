@@ -9,14 +9,6 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Slider } from "@/components/ui/slider"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ResultCards } from '@/components/ui/ResultCards'
 
@@ -156,9 +148,9 @@ export default function Home() {
             </div>
           ) : (
             <ResultCards 
-              calculatedRate={calculatedRate}
               formData={formData}
-              onBack={() => setStep('form')}
+              calculatedRate={calculatedRate}
+              onBackAction={() => setStep('form')}
             />
           )}
         </div>

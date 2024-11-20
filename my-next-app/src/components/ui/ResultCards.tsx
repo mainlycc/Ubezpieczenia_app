@@ -14,10 +14,10 @@ interface ResultCardsProps {
     insurancePeriod: string;
     insuranceLimit: number;
   };
-  onBack: () => void;
+  onBackAction: () => void;
 }
 
-export const ResultCards: React.FC<ResultCardsProps> = ({ calculatedRate, formData, onBack }) => {
+export function ResultCards({ calculatedRate, formData, onBackAction }: ResultCardsProps) {
   const [billingCycle, setBillingCycle] = useState("monthly")
 
   const calculatePrice = (basePrice: number) => {
