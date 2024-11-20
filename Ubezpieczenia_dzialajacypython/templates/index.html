@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Ubezpieczeniowy</title>
+    <style>
+        body {
+            background-color: #4A90E2; /* Kolor tła */
+            font-family: Arial, sans-serif; /* Czcionka */
+            color: #fff; /* Kolor tekstu */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff; /* Kolor tła formularza */
+            color: #000; /* Kolor tekstu formularza */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px; /* Szerokość formularza */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4A90E2; /* Kolor przycisku */
+            color: white; /* Kolor tekstu przycisku */
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #357ABD; /* Kolor przycisku po najechaniu */
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Ubezpieczeniowy</h1>
+        <form id="insuranceForm">
+            <label for="value">Wartość pojazdu (PLN):</label>
+            <input type="number" id="value" required>
+            <label for="period">Okres ubezpieczenia (miesiące):</label>
+            <input type="number" id="period" required>
+            <label for="limit">Limit ubezpieczenia (PLN):</label>
+            <input type="number" id="limit" required>
+            <button type="submit">Oblicz składkę</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        document.getElementById('insuranceForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const value = Number(document.getElementById('value').value);
+            const period = Number(document.getElementById('period').value);
+            const limit = Number(document.getElementById('limit').value);
+
+            fetch('/calculate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ value, period, limit })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '<h2>Propozycje ubezpieczeń:</h2>';
+                if (data.length === 0) {
+                    resultsDiv.innerHTML += '<p>Brak dostępnych propozycji.</p>';
+                } else {
+                    data.forEach(skladka => {
+                        resultsDiv.innerHTML += `<p>Wysokość składki: ${skladka} PLN</p>`;
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Błąd:', error);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+    "ubezpieczenie": {
+      "stawki": [
+        {
+          "limit": 50000,
+          "okres": 60,
+          "stawki": [
+            {"wartosc_od": 1, "wartosc_do": 50000, "skladka_klienta": 2500.00},
+            {"wartosc_od": 50001, "wartosc_do": 100000, "skladka_klienta": 2750.00},
+            {"wartosc_od": 100001, "wartosc_do": 150000, "skladka_klienta": 2950.00},
+            {"wartosc_od": 150001, "wartosc_do": 200000, "skladka_klienta": 3300.00},
+            {"wartosc_od": 200001, "wartosc_do": 250000, "skladka_klienta": 4000.00},
+            {"wartosc_od": 250001, "wartosc_do": 300000, "skladka_klienta": 5200.00},
+            {"wartosc_od": 300001, "wartosc_do": 350000, "skladka_klienta": 6600.00},
+            {"wartosc_od": 350001, "wartosc_do": 400000, "skladka_klienta": 7600.00},
+            {"wartosc_od": 400001, "wartosc_do": 450000, "skladka_klienta": 8600.00},
+            {"wartosc_od": 450001, "wartosc_do": 500000, "skladka_klienta": 9400.00}
+          ]
+        },
+        {
+          "limit": 100000,
+          "okres": 60,
+          "stawki": [
+            {"wartosc_od": 1, "wartosc_do": 50000, "skladka_klienta": 2500.00},
+            {"wartosc_od": 50001, "wartosc_do": 100000, "skladka_klienta": 2800.00},
+            {"wartosc_od": 100001, "wartosc_do": 150000, "skladka_klienta": 3100.00},
+            {"wartosc_od": 150001, "wartosc_do": 200000, "skladka_klienta": 3500.00},
+            {"wartosc_od": 200001, "wartosc_do": 250000, "skladka_klienta": 4450.00},
+            {"wartosc_od": 250001, "wartosc_do": 300000, "skladka_klienta": 5950.00},
+            {"wartosc_od": 300001, "wartosc_do": 350000, "skladka_klienta": 7800.00},
+            {"wartosc_od": 350001, "wartosc_do": 400000, "skladka_klienta": 9150.00},
+            {"wartosc_od": 400001, "wartosc_do": 450000, "skladka_klienta": 10750.00},
+            {"wartosc_od": 450001, "wartosc_do": 500000, "skladka_klienta": 12500.00}
+          ]
+        },
+        {
+          "limit": 150000,
+          "okres": 60,
+          "stawki": [
+            {"wartosc_od": 1, "wartosc_do": 50000, "skladka_klienta": 2500.00},
+            {"wartosc_od": 50001, "wartosc_do": 100000, "skladka_klienta": 2800.00},
+            {"wartosc_od": 100001, "wartosc_do": 150000, "skladka_klienta": 3100.00},
+            {"wartosc_od": 150001, "wartosc_do": 200000, "skladka_klienta": 3950.00},
+            {"wartosc_od": 200001, "wartosc_do": 250000, "skladka_klienta": 5100.00},
+            {"wartosc_od": 250001, "wartosc_do": 300000, "skladka_klienta": 6850.00},
+            {"wartosc_od": 300001, "wartosc_do": 350000, "skladka_klienta": 9150.00},
+            {"wartosc_od": 350001, "wartosc_do": 400000, "skladka_klienta": 10900.00},
+            {"wartosc_od": 400001, "wartosc_do": 450000, "skladka_klienta": 13000.00},
+            {"wartosc_od": 450001, "wartosc_do": 500000, "skladka_klienta": 15300.00}
+          ]
+        },
+        {
+          "limit": 200000,
+          "okres": 60,
+          "stawki": [
+            {"wartosc_od": 1, "wartosc_do": 50000, "skladka_klienta": 2600.00},
+            {"wartosc_od": 50001, "wartosc_do": 100000, "skladka_klienta": 2950.00},
+            {"wartosc_od": 100001, "wartosc_do": 150000, "skladka_klienta": 3300.00},
+            {"wartosc_od": 150001, "wartosc_do": 200000, "skladka_klienta": 4200.00},
+            {"wartosc_od": 200001, "wartosc_do": 250000, "skladka_klienta": 5400.00},
+            {"wartosc_od": 250001, "wartosc_do": 300000, "skladka_klienta": 7150.00},
+            {"wartosc_od": 300001, "wartosc_do": 350000, "skladka_klienta": 9550.00},
+            {"wartosc_od": 350001, "wartosc_do": 400000, "skladka_klienta": 11550.00},
+            {"wartosc_od": 400001, "wartosc_do": 450000, "skladka_klienta": 13750.00},
+            {"wartosc_od": 450001, "wartosc_do": 500000, "skladka_klienta": 16200.00}
+          ]
+        },
+        {
+          "limit": 250000,
+          "okres": 60,
+          "stawki": [
+            {"wartosc_od": 1, "wartosc_do": 50000, "skladka_klienta": 2750.00},
+            {"wartosc_od": 50001, "wartosc_do": 100000, "skladka_klienta": 3100.00},
+            {"wartosc_od": 100001, "wartosc_do": 150000, "skladka_klienta": 3550.00},
+            {"wartosc_od": 150001, "wartosc_do": 200000, "skladka_klienta": 4500.00},
+            {"wartosc_od": 200001, "wartosc_do": 250000, "skladka_klienta": 5750.00},
+            {"wartosc_od": 250001, "wartosc_do": 300000, "skladka_klienta": 7600.00},
+            {"wartosc_od": 300001, "wartosc_do": 350000, "skladka_klienta": 10100.00},
+            {"wartosc_od": 350001, "wartosc_do": 400000, "skladka_klienta": 12200.00},
+            {"wartosc_od": 400001, "wartosc_do": 450000, "skladka_klienta": 14500.00},
+            {"wartosc_od": 450001, "wartosc_do": 500000, "skladka_klienta": 17050.00}
+          ]
+        },
+        {
+          "limit": 50000,
+          "okres": 12,
+          "stawki": [
+            {"wartosc_od": 1, "wartosc_do": 50000, "skladka_klienta": 750.00},
+            {"wartosc_od": 50001, "wartosc_do": 100000, "skladka_klienta": 800.00},
+            {"wartosc_od": 100001, "wartosc_do": 150000, "skladka_klienta": 850.00},
+            {"wartosc_od": 150001, "wartosc_do": 200000, "skladka_klienta": 950.00},
+            {"wartosc_od": 200001, "wartosc_do": 250000, "skladka_klienta": 1200.00},
+            {"wartosc_od": 250001, "wartosc_do": 300000, "skladka_klienta": 1550.00},
+            {"wartosc_od": 300001, "wartosc_do": 350000, "skladka_klienta": 1950.00},
+            {"wartosc_od": 350001, "wartosc_do": 400000, "skladka_klienta": 2250.00},
+            {"wartosc_od": 400001, "wartosc_do": 450000, "skladka_klienta": 2500.00},
+            {"wartosc_od": 450001, "wartosc_do": 500000, "skladka_klienta": 2750.00},
+            {"wartosc_od": 500001, "wartosc_do": 550000, "skladka_klienta": 2950.00},
+            {"wartosc_od": 550001, "wartosc_do": 600000, "skladka_klienta": 3050.00},
+            {"wartosc_od": 600001, "wartosc_do": 650000, "skladka_klienta": 3400.00},
+            {"wartosc_od": 650001, "wartosc_do": 700000, "skladka_klienta": 3750.00},
+            {"wartosc_od": 700001, "wartosc_do": 750000, "skladka_klienta": 3900.00},
+            {"wartosc_od": 750001, "wartosc_do": 800000, "skladka_klienta": 4100.00}
+
+          ]
+        }
+      ]
+    }
+  }
+  
