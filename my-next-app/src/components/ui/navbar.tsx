@@ -8,19 +8,19 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-[#4169E1]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0 flex items-center">
-              <span className="text-xl font-bold">Ubezpieczenia</span>
+            <Link href="/" className="flex-shrink-0 flex items-center text-white text-xl font-bold">
+              <span className="text-2xl font-bold">Ubezpieczenia</span>
             </Link>
           </div>
 
           {/* Menu na większe ekrany */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+              <button className="text-white text-xl font-bold hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">
                 GAP
               </button>
               <div className="absolute z-10 hidden group-hover:block w-48 bg-white shadow-lg rounded-md mt-2">
@@ -34,7 +34,7 @@ export const Navbar = () => {
             </div>
 
             <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+              <button className="text-white text-xl font-bold hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">
                 Ubezpieczenia komunikacyjne
               </button>
               <div className="absolute z-10 hidden group-hover:block w-48 bg-white shadow-lg rounded-md mt-2">
@@ -51,7 +51,7 @@ export const Navbar = () => {
             </div>
 
             <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+              <button className="text-white text-xl font-bold hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">
                 Ubezpieczenia nieruchomości
               </button>
               <div className="absolute z-10 hidden group-hover:block w-48 bg-white shadow-lg rounded-md mt-2">
@@ -87,7 +87,7 @@ export const Navbar = () => {
             <Link href="/komunikacyjne" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md">
               Ubezpieczenia komunikacyjne
             </Link>
-            <Link href="/nieruchomosci" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md">
+            <Link href="/nieruchomosci" className="block px-3 py-2 text-base font-medium text-xl hover:text-gray-900 hover:bg-gray-100 rounded-md">
               Ubezpieczenia nieruchomości
             </Link>
           </div>

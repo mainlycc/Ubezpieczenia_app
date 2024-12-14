@@ -97,7 +97,7 @@ export default function Home() {
             {step === 'form' ? (
               <>
                 <div className="w-2/5">
-                  <div className="bg-white drop-shadow-2xl rounded-lg p-8">
+                  <div className="bg-white drop-shadow-2xl rounded-3xl p-8">
                     {error && (
                       <div className="mb-4 p-4 bg-red-100 text-red-700 rounded">
                         {error}
@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
                 <div className="w-1/2">
                   <div className="bg-[#4169E1] p-8 rounded-lg h-full">
-                    <h2 className="text-4xl font-bold mb-4 text-white">Znajdź idealne ubezpieczenie samochodowe w kilka minut. Oszczędzaj czas i pieniądze dzięki naszym spersonalizowanym ofertom.</h2>
+                    <h2 className="text-4xl font-bold mb-4 text-white">Znajdź idealne ubezpieczenie dla Twojego samochodu w kilka minut. Oszczędzaj czas i pieniądze dzięki naszym spersonalizowanym ofertom.</h2>
                     <p className="text-gray-200">
                       Tutaj możesz umieścić dodatkowe informacje o ubezpieczeniu, warunki, 
                       szczegóły oferty oraz inne istotne informacje dla klienta.
