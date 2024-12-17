@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,13 +64,19 @@ export const Navbar = () => {
                 </Link>
               </div>
             </div>
+
+            <Link href="/wybor-ubezpieczenia">
+              <Button className="bg-white text-[#4169E1] hover:bg-blue-100 font-bold py-2 px-4 rounded-lg shadow-lg transition-all duration-200">
+                Zabezpiecz Auto
+              </Button>
+            </Link>
           </div>
 
           {/* Przycisk menu mobilnego */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-700"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -89,6 +96,11 @@ export const Navbar = () => {
             </Link>
             <Link href="/nieruchomosci" className="block px-3 py-2 text-base font-medium text-xl hover:text-gray-900 hover:bg-gray-100 rounded-md">
               Ubezpieczenia nieruchomości
+            </Link>
+            <Link href="/wybor-ubezpieczenia" className="block w-full">
+              <Button className="w-full bg-white text-[#4169E1] hover:bg-blue-100 font-bold py-2 px-4 rounded-lg shadow-lg">
+                Zabezpiecz Auto!
+              </Button>
             </Link>
           </div>
         </div>
